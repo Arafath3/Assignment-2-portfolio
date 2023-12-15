@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arafath -Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/da7e454d4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .header {
+            background-image: url(./img/banner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar and Banner section -->
+    <header class="header container mx-auto">
+        <!-- nav bar -->
+        <nav class="md:w-3/4 md:mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-3xl font-bold text-[#ccf381]">Arafath</a>
+
+                </div>
+                <div class="navbar-end">
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-[#ccf381]  md:text-[#4831d4]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Experience</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="flex justify-around items-center w-5/6 mx-auto h-screen">
+            <!-- text -->
+            <div class="lg:w-2/3 mx-auto">
+                <h1 class="text-lg md:text-2xl lg:text-3xl font-semibold text-[#ccf381] my-3">Hello, I am Arafath a</h1>
+                <h3 class="text-3xl md:text-5xl lg:text-7xl text-[#ccf381] font-extrabold"><span id="typed"></span><span
+                        id="cursor" class="text-[#ccf381] animate-pulse ">|</span></h3>
+                <p class="text-white text-base md:text-lg lg:w-3/4 my-3">I like to craft solid and scalable frontend products with
+                    great user experiences.</p>
+                    <div class="flex justify-evenly items-center md:w-2/3 md:mx-6 gap-5 text-base text-[#ccf381] mt-14">
+                        <p>Highly skilled at progressive enhancement, design systems & UI Engineering.</p>
+                        <p>Proven experience building successful products for clients across several countries.</p>
+                    </div>
+            </div>
+            <!-- img -->
+            <div class="hidden md:flex shadow-2xl shadow-[#4831d4]">
+                <div>
+                    <img class="" src="./img/WhatsApp Image 2023-09-09 at 18.27.18_1b8358d4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
+
+
+    <!-- javaScript -->
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
