@@ -26,27 +26,29 @@
             background-image: url(./img/banner.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            
+
         }
-        section .anime{
+
+        section .anime {
             opacity: 0;
             filter: blur(5px);
             transition: 1s;
         }
-        section.show-animation .anime{
+
+        section.show-animation .anime {
             opacity: 1;
             filter: blur(0);
-           
+
         }
 
-       .sec-1 .anime{
-        transform: translateX(-100%);
-        transition-delay: calc(.2s * var(--i));
-       }
-       .sec-1.show-animation .anime{
-        transform: translateX(0);
-       }
+        .sec-1 .anime {
+            transform: translateX(-100%);
+            transition-delay: calc(.2s * var(--i));
+        }
 
+        .sec-1.show-animation .anime {
+            transform: translateX(0);
+        }
     </style>
 </head>
 
@@ -114,8 +116,8 @@
             <!-- card -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-3">
                 <!-- card 1 -->
-                <div
-                    class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:0;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:0;">
                     <div class="p-6">
                         <img class="w-10 h-10"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
@@ -131,9 +133,9 @@
                     </div>
                     <div class="p-6 pt-0">
                         <a href="#" class="inline-block">
-                            <button
-                                class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
-                                type="button">
+
+                            <!-- You can open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost" onclick="my_modal_3.showModal()">
                                 Learn More
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                     stroke="currentColor" class="w-4 h-4">
@@ -141,12 +143,47 @@
                                         d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
                                 </svg>
                             </button>
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box">
+                                    <form method="dialog">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <!-- details in the modal -->
+                                    <div>
+                                        <div>
+                                            <img class="w-10 h-10"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+                                                alt="">
+                                        </div>
+                                        <div class="my-4">
+                                            <h3 class="text-base font-medium my-3">Progression level: Junior</h3>
+                                            <div
+                                                class="flex-start flex h-3.5 w-full overflow-hidden rounded-full border border-gray-900/10 bg-gray-900/5 p-1 font-sans text-xs font-medium">
+                                                <div
+                                                    class="flex items-center justify-center w-1/2 h-full overflow-hidden text-white break-all bg-yellow-200 rounded-full">
+                                                </div>
+                                            </div>
+                                            <div class="text-base text-gray-400 font-medium mt-3">
+                                                <p>I'm a junior-level JavaScript developer with a strong foundation in
+                                                    the fundamentals of the language. I'm confident in working with
+                                                    variables, functions, arrays, objects, and control flow structures.
+                                                    I've actively built projects utilizing DOM manipulation and basic
+                                                    event handling to create interactive elements. While still learning,
+                                                    I'm eager to expand my knowledge in libraries and frameworks like
+                                                    React or Vue.js to build more complex web applications.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </dialog>
                         </a>
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div
-                class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:1;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:1;">
                     <div class="p-6">
                         <img class="w-10 h-10"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
@@ -176,8 +213,8 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div
-                    class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:2;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:2;">
                     <div class="p-6">
                         <img class="w-10 h-10"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
@@ -207,8 +244,8 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div
-                    class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:0;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:0;">
                     <div class="p-6">
                         <img class="w-10 h-10"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
@@ -238,12 +275,10 @@
                     </div>
                 </div>
                 <!-- card 5 -->
-                <div
-                    class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:1;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:1;">
                     <div class="p-6">
-                        <img class="h-12"
-                            src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png"
-                            alt="">
+                        <img class="h-12" src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" alt="">
                         <h5
                             class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 my-3">
                             Node js
@@ -269,12 +304,10 @@
                     </div>
                 </div>
                 <!-- card 6 -->
-                <div
-                    class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime" style="--i:2;">
+                <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 anime"
+                    style="--i:2;">
                     <div class="p-6">
-                        <img class="h-10"
-                            src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
-                            alt="">
+                        <img class="h-10" src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="">
                         <h5
                             class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900 my-3">
                             C
@@ -301,9 +334,47 @@
                 </div>
             </div>
         </section>
-        <section class="transition-opacity ease-in-out duration-500">
-            <div>
-                Hello
+        <!-- experience section -->
+        <section class="h-screen w-5/6 mx-auto sec-2 show-animation overflow-x-hidden">
+            <div class="flex justify-evenly items-center">
+                <!-- education -->
+                <div class="anime">
+                    <h1 class="text-3xl font-bold text-[#4831d4]">My Education</h1>
+                    <div class="text-lg text-left font-semibold w-3/4 anime">
+                        <h3 class="my-2 text-2xl">Bachelor's In Information Technology</h3>
+                        <h4>La Trobe University / 2023-2026</h4>
+                        <p class="text-gray-500 my-2">I earned my Bachelor of Information Technology from La Trobe University, immersing myself in the exciting world of IT. My studies equipped me with a strong foundation in programming, networking, cybersecurity, and data analysis, preparing me for a successful career in the ever-evolving tech landscape.</p>
+                        <hr class="text-[#ccf381] my-3">
+                    </div>
+                    
+                    <div class="text-lg text-left font-semibold w-3/4 anime">
+                        <h3 class="my-2 text-2xl">Web Development</h3>
+                        <h4>Programming Hero / 2023-2023</h4>
+                        <p class="text-gray-500 my-2">I actively sought to enhance my web development skills and enrolled in Programming Hero's esteemed "Advance Web Development" course. This intensive program pushed me beyond the basics, diving deep into modern tools and frameworks like MERN stack (MongoDB, Express.js, React.js, and Node.js), TypeScript, Redux, and more. With hands-on projects and expert guidance.</p>
+
+                        <hr class=" text-[#ccf381] my-3">
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="anime">
+                    <div>
+                        <h1 class="text-3xl font-bold text-[#4831d4]">My Experience</h1>
+                        <div class="text-lg text-left font-semibold w-3/4 anime">
+                            <h3 class="my-2 text-2xl">AI-powered Personalization Lead</h3>
+                            <h4>DreamShop /2026-2028</h4>
+                            <p class="text-gray-500 my-2">pearheaded the development and implementation of an AI-powered recommendation engine for DreamShop's e-commerce platform. Led a team of 4 developers, designing and building algorithms that analyzed user behavior and purchase history to suggest relevant products in real-time. Increased conversion rates by 15% within 6 months.</p>
+                            <hr class="text-[#ccf381] my-3">
+                        </div>
+                        <div class="text-lg text-left font-semibold w-3/4 anime">
+                            <h3 class="my-2 text-2xl">Frontend Developer</h3>
+                            <h4>GreenTech Solutions /2028-current</h4>
+                            <p class="text-gray-500 my-2"> Played a pivotal role in architecting and developing the frontend for GreenTech's flagship environmental monitoring app. Used React.js and GraphQL to create a modular, scalable, and responsive UI that seamlessly integrated with their complex backend infrastructure. Championed code reusability and best practices, fostering a collaborative development environment.</p>
+                            <hr class="text-[#ccf381] my-3">
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
