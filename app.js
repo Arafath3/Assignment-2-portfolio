@@ -46,3 +46,16 @@ const writeLoop = async () => {
     }
 };
 writeLoop();
+
+// scroll
+const links = document.querySelectorAll('[data-scroll-to]');
+
+links.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.dataset.scrollTo;
+        const targetElement = document.getElementById(targetId);
+        targetElement.classList.add('scroll-smooth');
+        targetElement.scrollIntoView({ behavior: "smooth"});
+      });
+    });
