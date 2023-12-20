@@ -55,7 +55,6 @@ links.forEach(link => {
         e.preventDefault();
         const targetId = this.dataset.scrollTo;
         const targetElement = document.getElementById(targetId);
-        targetElement.classList.add('scroll-smooth');
         targetElement.scrollIntoView({ behavior: "smooth"});
       });
     });
