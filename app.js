@@ -58,3 +58,22 @@ links.forEach(link => {
         targetElement.scrollIntoView({ behavior: "smooth"});
       });
     });
+
+
+// submit notification 
+
+let toastBox = document.getElementById('toastBox');
+
+function showToast(){
+
+let toast = document.createElement('div');
+toast.classList = "p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4";
+toast.innerHTML = '<i class="fa-solid fa-check mx-5 text-3xl text-green-400"></i> <h1>You have send a massage successfully</h1>';
+toastBox.appendChild(toast);
+
+setTimeout(()=>{
+    toast.remove();
+},6000);
+
+
+}
